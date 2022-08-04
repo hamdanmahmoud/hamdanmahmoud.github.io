@@ -286,7 +286,7 @@ a.active {
 }
 
 figure {
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 
 blockquote {
@@ -414,6 +414,10 @@ blockquote {
   position: relative;
 }
 
+ul.list-style-square {
+  list-style-type: square;
+}
+
 .timeline:before {
   background-color: black;
   content: "";
@@ -454,6 +458,11 @@ blockquote {
 .timeline-event-copy h4 {
   font-size: 1.2em;
   margin-bottom: 1.2em;
+}
+
+.timeline-event-copy h5 {
+  font-size: 1em;
+  margin-bottom: 0.8em;
 }
 
 .timeline-event-copy strong {
@@ -855,4 +864,107 @@ p {
 
 img.img-responsive.aos-init.aos-animate {
   filter: grayscale(1);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.selectable {
+  -webkit-touch-callout: all; /* iOS Safari */
+  -webkit-user-select: all; /* Safari */
+  -khtml-user-select: all; /* Konqueror HTML */
+  -moz-user-select: all; /* Old versions of Firefox */
+  -ms-user-select: all; /* Internet Explorer/Edge */
+  user-select: all; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.hiding-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.hiding-tooltip .shown {
+  font-weight: 600;
+  color: #425bb5;
+  animation: 1.5s shake infinite alternate;
+}
+
+/* Tooltip text */
+.hiding-tooltip .tooltiptext {
+  visibility: hidden;
+  width: 620px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  left: 150%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.hiding-tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+@keyframes shake {
+  0% { 
+    -webkit-transform: skew(-45deg, 0deg);
+    -moz-transform:skew(-45deg, 0deg);
+    -o-transform:skew(-45deg, 0deg);
+    -ms-transform:skew(-45deg, 0deg);
+    transform: skew(-45deg, 0deg);
+    font-size: 12px;
+  }
+  5% {
+    -webkit-transform: skew(45deg, 0deg);
+  -moz-transform:skew(45deg, 0deg);
+  -o-transform:skew(45deg, 0deg);
+  -ms-transform:skew(45deg, 0deg);
+  transform: skew(45deg, 0deg);
+  font-size: 13px;
+  }
+  10% {
+    -webkit-transform: skew(-45deg, 0deg);
+    -moz-transform:skew(-45deg, 0deg);
+    -o-transform:skew(-45deg, 0deg);
+    -ms-transform:skew(-45deg, 0deg);
+    transform: skew(-45deg, 0deg);
+    font-size: 14px;
+}
+  15% {
+    -webkit-transform: skew(45deg, 0deg);
+    -moz-transform:skew(45deg, 0deg);
+    -o-transform:skew(45deg, 0deg);
+    -ms-transform:skew(45deg, 0deg);
+    transform: skew(45deg, 0deg);
+    font-size: 15px;
+  }
+  20% {
+    -webkit-transform: skew(0deg, 0deg);
+    -moz-transform:skew(0deg, 0deg);
+    -o-transform:skew(0deg, 0deg);
+    -ms-transform:skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+    font-size: 16px;
+  }
+  100% {
+    -webkit-transform: skew(0deg, 0deg);
+    -moz-transform:skew(0deg, 0deg);
+    -o-transform:skew(0deg, 0deg);
+    -ms-transform:skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+    font-size: 16px;
+  } 
 }

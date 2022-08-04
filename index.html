@@ -21,7 +21,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body class="noselect">
     <!-- Preloader -->
     <div id="preloader">
       <div id="status">
@@ -57,6 +57,10 @@
               <div>
                 <h4>Mahmoud-Tudor Hamdan</h4>
                 <h1>Software Engineer</h1>
+                <div class="hiding-tooltip noselect">
+                  <div class="shown">Why me?</div>
+                  <span class="tooltiptext">Based on my own experience, most interviewed candidates are either good with styling and fall short at problem solving, or viceversa. Frontend developers that are also good with algorithms are much more rare to be found than their backend counterparts. Memoizing, time complexity and efficiency is not needed on the UI, until it is. This makes the difference between a laggy application and one that gives users the best experience even under the worst conditions.  </span>
+                </div>
               </div>
               <div class="profile-pic-wrapper">
                 <img
@@ -151,35 +155,50 @@
                 <h3>JavaScript Developer</h3>
                 <h4>Luxoft (DXC Technology)</h4>
                 <p>
-                  Developed <strong>Nexus Dashboard</strong> and related
-                  <strong>Cisco</strong> APIC apps, aiming to unify automation
-                  and management for the Cisco ACI fabric, policy enforcement,
-                  and health monitoring of Nexus 9000 Series Switches
-                  <strong>(React, Redux)</strong>
+                  Working on the <strong>Nexus</strong> Development team, mainly on
+                  <strong>Cisco</strong> Nexus Dashboard and related products 
+                  (ND On-Prem, ND SaaS and ApiDocs).
+                  </br>
+                  Responsible for writing and testing technical implementations, 
+                  as well as keeping contact with UX product designers, backend teams 
+                  and product management.
+                </p>
+                <h5>
+                 Achievements
+                </h5>
+                <p>
+                  <strong>Cisco</strong>'s products - Implemented various UI interactive
+                  features based on declarative views throughout ND SaaS and ND On-Prem. </br>
+                  <strong>Cisco</strong>'s open-source contributions - Forked, adapted
+                  and extended Redoc, an open-source interactive API documentation
+                  generator that follows OpenApi Specification, providing it with rich
+                  additional functionalities based on numerous data structures and algorithms. </br>
+                  <strong>Cisco</strong>'s closed-source contributions - Enhanced components,
+                  tracked and fixed various issues on a React UI library staying at the core
+                  of all Nexus products. </br>
+                  <strong>Cisco</strong>'s showcase - Developed multiple POC static sites to
+                  build a dev community around <strong>Cisco</strong>'s software solutions,
+                  showcasing products and encouraging both outsiders and insiders to use them
+                  or become contributors. </br>
+                  <strong>Cisco</strong>'s documentation - Created documentation from AsciiDoc
+                  content using Antora, a modular, multi-repository site generator. </br>
+                  <strong>Luxoft</strong>'s Technical Interviewing - Had a chance to see things
+                  from the other side of the table, assessing candidates' JavaScript problem solving
+                  and React depth and breadth skills. </br>
                 </p>
                 <p>
-                  Enhanced components, tracked and fixed various bugs in a
-                  Closed Source UI Library <strong>(React)</strong>
-                </p>
-                <p>
-                  Forked a popular OpenAPI/Swagger-generated API Reference
-                  Documentation, extending it (UI and UX wise) to support
-                  additional functionalities for managing
-                  <strong>Cisco</strong> APIs
-                  <strong>(Typescript, React, Mobx)</strong>, while also
-                  creating documentation sites from AsciiDoc content using a
-                  modular, multi-repository site generator
-                  <strong>(Antora)</strong>
-                </p>
-                <p>
-                  Developed multiple POC static sites to build a dev community
-                  around Cisco's software solutions, showcasing products and
-                  encouraging both outsiders and insiders to use or develop them
-                  <strong>(Hugo, Next.js)</strong>
-                </p>
-                <p>
-                  Managed content caching and other related things
-                  <strong>(Nginx)</strong>
+                  <h5>Tech stack</h5>
+                  <ul class="list-style-square">
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Single-Spa</li>
+                    <li>Next.js</li>
+                    <li>Redux</li>
+                    <li>MobX</li>
+                    <li>Jest</li>
+                    <li>Nginx</li>
+                  </ul>
                 </p>
               </div>
             </li>
@@ -401,7 +420,7 @@
           <h3>Feel free to drop me a message</h1>
           <div class="h-50"></div>
         </div>
-        <div class="col-md-4" data-aos="fade-up">
+        <div class="col-md-4 selectable" data-aos="fade-up">
           <h3>Mobile Number</h3>
           <p>+40 788 466 214</p>
           <h3>Email</h3>
