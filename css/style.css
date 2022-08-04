@@ -968,3 +968,9 @@ img.img-responsive.aos-init.aos-animate {
     font-size: 16px;
   } 
 }
+
+.important-note {
+  color: red;
+  font-weight: 800;
+  font-size: larger;
+}
