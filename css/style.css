@@ -330,12 +330,22 @@ blockquote {
   .about-img-div {
     display: none;
   }
+
+  .hiding-tooltip .tooltiptext {
+    width: 250px;
+    left: -75px;
+  }
 }
 
 @media only screen and (min-width: 800px) {
   #home .profile-pic {
     margin-left: 30%;
   }
+
+    .hiding-tooltip .tooltiptext {
+      width: 620px;  
+      left: 150%;
+    }
 }
 
 #home .profile-pic {
@@ -897,23 +907,18 @@ img.img-responsive.aos-init.aos-animate {
   animation: 1.5s shake infinite alternate;
 }
 
-/* Tooltip text */
 .hiding-tooltip .tooltiptext {
   visibility: hidden;
-  width: 620px;
   background-color: black;
   color: #fff;
   text-align: center;
   padding: 25px;
   border-radius: 6px;
 
-  /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
-  left: 150%;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .hiding-tooltip:hover .tooltiptext {
   visibility: visible;
 }
